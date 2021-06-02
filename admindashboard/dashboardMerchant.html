@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Merchant Settings and Exchange Rate</title>
+    <meta charset="utf-8" / >
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="keywords" content="Best Bills Payment System">
+    <meta name="author" content="Michael">
+
+
+
+    <meta property="og:title" content="VESTI Dashboard | Bills Payment System,  &amp; More!" />
+    <meta property="og:description" content="VESTI Dashboard the #1 Best Bills Payment System" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="../assets/images/shortcut_logo.png" />
+    <meta property="og:locale" content="en_NG" />
+    <meta name="title" content="VESTI Dashboard | Bills Payment System,  &amp; More!" />
+
+    <link rel="icon" type="image/png" href="../assets/images/v.png" />
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom_bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/elegant.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+    <link rel="stylesheet" href="../assets/css/icomoon.css">
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="../assets/css/materialize.css">
+    <link rel="stylesheet" href="../assets/css/materialize.min.css">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </head>
+
+  <body>
+    <div id="main">
+
+      <!-- End header-->
+      <div class="ogami-breadcrumb">
+        <div class="container">
+          <ul>
+            <li> <a class="breadcrumb-link" href="dashboard2.html"> <i class="fas fa-home"></i>Home</a></li>
+            <li> <a class="breadcrumb-link active"  href="../index.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End breadcrumb-->
+      <div class="account">
+        <div class="container">
+          <div class="row">
+          
+
+            <div class="col-12 col-md-6 mx-auto">
+
+         
+
+            <div id="containerr">
+              <img width="60px" src="../assets/images/Vesti_logo.svg" class="elevation-1" alt="VESTI"> 
+
+
+
+
+                    
+
+
+
+
+              <h6 class="text-black"><u> Exchange Rate NGN- Dollar($)</u></h6> 
+              <form id="formExchangeRate" method="post" novalidate>
+                <label for="user-name">NGN Rate *</label>
+                <input class="no-round-input" id="ExchangeRate" type="subject" name="subject" required>
+               
+             
+                <div class="account-function">
+                  <button class="no-round-btn" type="submit" id="ExchangeRateBtn">Update</button>   </div>
+              </form>
+
+              </div>
+
+
+              <hr>
+
+              <br>
+              <br>
+              <div id="containerrWes">
+              <h6 class="text-black"><u> WES Fee </u></h6> 
+              <form id="formWes" method="post" novalidate>
+                <label for="user-name">Amount In USD Cents</label>
+                <input class="no-round-input" id="AmusdWes" type="subject" name="subject" required>
+               
+                <label for="user-name">Charge In USD Cents</label>
+                
+                <input class="no-round-input" id="ChusdWes" type="subject" name="subject" required>
+         
+               
+             
+              
+                <div class="account-function">
+                  <button class="no-round-btn" type="submit" id="WesBtn">Update</button>   </div>
+              </form>
+
+              </div>
+
+              <hr>
+              <br>
+              <br>
+
+               <div id="containerrWesExp">
+            
+              <h6 class="text-black"><u> WES Expedited Fee </u></h6> 
+              <form id="formWesExpedited" method="post" novalidate>
+                <label for="user-name">Amount In USD Cents</label>
+                <input class="no-round-input" id="AmusdWesExp" type="subject" name="subject" required>
+               
+                <label for="user-name">Charge In USD Cents</label>
+                
+                <input class="no-round-input" id="ChusdWesExp" type="subject" name="subject" required>
+         
+               
+             
+              
+                <div class="account-function">
+                  <button class="no-round-btn" type="submit" id="WesExpBtn">Update</button>   </div>
+              </form>
+
+              </div>
+
+              <hr>
+
+              <br>
+              <br>
+              <div id="containerrSevis">
+            
+              <h6 class="text-black"><u> SEVIS </u></h6> 
+              <form id="formSevis" method="post" novalidate>
+                <label for="user-name">Amount In USD Cents</label>
+                <input class="no-round-input" id="AmusdSevis" type="subject" name="subject" required>
+               
+                <label for="user-name">Charge In USD Cents</label>
+                
+                <input class="no-round-input" id="ChusdSevis" type="subject" name="subject" required>
+         
+               
+             
+              
+                <div class="account-function">
+                  <button class="no-round-btn" type="submit" id="SevisBtn">Update</button>   </div>
+              </form>
+
+              </div>
+
+              <hr>
+
+               <h6 class="text-black"><u> Current Payment Info </u></h6>
+               <div id="currentPaymentInfo"> 
+               <div>   
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End account-->
+      
+      
+     
+      <!-- End footer-->
+    </div>
+   
+
+    <script type="text/javascript" src="../js/ExchangeRate.js"></script>
+
+   <script type="text/javascript" src="../js/Sevis.js"></script>
+
+   <script type="text/javascript" src="../js/Wes.js"></script>
+
+   <script type="text/javascript" src="../js/WesExpedited.js"></script>
+
+   <script type="text/javascript" src="../js/CurrentPaymentInfo.js"></script>
+
+ 
+  
+
+  
+
+</html>
